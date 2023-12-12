@@ -1,7 +1,12 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/plasticchange.png";
+---
+
 <header>
     <nav>
         <ul>
-            <li> <img src="./assets/plasticchange.png" alt="logo"></li>
+            <li> <Image  class="billedet" src={logo} alt="logo" /></li>
             <li><a href="#">Generelt</a></li>
             <li><a href="#">Vores arbejde</a></li>
             <li><a href="#">Hvad kan du gøre?</a></li>
@@ -14,6 +19,14 @@
 <style>
 nav {
     background-color: var(--bg);
+}
+
+ul {
+    list-style-type: none;
+}
+
+li a {
+    color: white;
 }
 
 </style>
