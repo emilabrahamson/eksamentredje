@@ -2,18 +2,24 @@
 import "../styles/global.css";
 import { Image } from "astro:assets";
 import logo from "../assets/plasticchange.png";
+import Button from "../components/Button.astro";
+import Button02 from "../components/Button02.astro";
 ---
 
 <header>
     <nav>
         <ul>
             <li><a href="#"><Image  class="billedet" src={logo} alt="logo" /></a></li>
+            <div class="flex">
             <li><a href="#">Generelt</a></li>
             <li><a href="#">Vores arbejde</a></li>
             <li><a href="#">Hvad kan du gøre?</a></li>
             <li><a href="#">Videnscenter</a></li>
             <li><a href="#">Kontakt</a></li>
+         </div>
         </ul>
+        <Button />
+        <Button02 />
        </nav>
 </header>
 
@@ -35,18 +41,25 @@ li {
 }
 
 li a {
-display: block;
+display: flex;
   color: white;
-  text-align: center;
   padding: 16px;
   text-decoration: none;
   font-family: rubik;
+  font-size: 18px;
+  line-height: 75px;
 }
 
-img {
-    max-width: 50%;
-    max-height: 50%;
-    padding-right: 100%;
+.flex {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+a img {
+    margin-right: 70px;
+    margin-left: 40px;
 }
 
 </style>

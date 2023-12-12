@@ -6,3 +6,7 @@
   --green: #007c79;
   --light: #cacdd5;
 }
+
+* {
+  margin: 0;
+}
