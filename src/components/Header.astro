@@ -11,15 +11,19 @@ import Button02 from "../components/Button02.astro";
         <ul>
             <li><a href="#"><Image  class="billedet" src={logo} alt="logo" /></a></li>
             <div class="flex">
-            <li><a href="#">Generelt</a></li>
-            <li><a href="#">Vores arbejde</a></li>
-            <li><a href="#">Hvad kan du gøre?</a></li>
-            <li><a href="#">Videnscenter</a></li>
-            <li><a href="#">Kontakt</a></li>
+            <li><a class="link" href="#">Generelt</a></li>
+            <li><a class="link" href="#">Vores arbejde</a></li>
+            <li><a class="link" href="#">Hvad kan du gøre?</a></li>
+            <li><a class="link" href="#">Videnscenter</a></li>
+            <li><a class="link" href="#">Kontakt</a></li> 
+            <div class="buttons">
+          <Button />
+        <Button02 />
+            </div>
          </div>
         </ul>
-        <Button />
-        <Button02 />
+    
+         
        </nav>
 </header>
 
@@ -40,7 +44,7 @@ li {
   float: left;
 }
 
-li a {
+a.link{
 display: flex;
   color: white;
   padding: 16px;
@@ -60,6 +64,11 @@ display: flex;
 a img {
     margin-right: 70px;
     margin-left: 40px;
+}
+
+.buttons {
+margin-top: 3%;
+margin-left: 17%; 
 }
 
 </style>
