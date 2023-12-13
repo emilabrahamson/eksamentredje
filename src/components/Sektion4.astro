@@ -1,13 +1,24 @@
 ---
 import Button03 from "./Button03.astro";
+import { Image } from "astro:assets";
+import grid01 from "../assets/grid01.png";
+import grid02 from "../assets/grid02.png";
+import grid03 from "../assets/grid03.png";
+import grid04 from "../assets/grid04.png";
 ---
 <h1>DELTAG I KAMPEN MED OS</h1>
 <p>Besøg vores videnscenter og bliv indspireret af hvad du kan gøre af store og små ting som alle gør en kæmpe forskel for vores natur og havmiljø.</p>
 <div id="grid_1-1-1-1">
-
+    <Image src={grid01} alt="billede i grid" />
+    <Image src={grid02} alt="billede i grid" />
+    <Image src={grid03} alt="billede i grid" />
+    <Image src={grid04} alt="billede i grid" />
 </div>
 <Button03 />
 
 <style>
-
+#grid_1-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 </style>
