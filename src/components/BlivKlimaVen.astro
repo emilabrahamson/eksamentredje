@@ -1,15 +1,31 @@
 ---
-
+import { Image } from "astro:assets";
+import Button03 from "./Button03.astro";
+import Button02 from "./Button02.astro";
+import Button04 from "./Button04.astro";
+import symbol01 from "../assets/sus01.png";
+import symbol02 from "../assets/sus02.png";
+import symbol03 from "../assets/sus03.png";
 ---
 
 <div id="grid_1-1">
     <div class="blivKlimaVen">
 <h1>BLIV KLIMA VEN</h1>
 <p>En del af din støtte går til at lægge politisk pres for bedre miljølovgivning, der værner om kloden og dens ressourcer. </p>
-<p>En mindre del går til fundraising og indsamlinger, så Plastic Changer bevægelsen kan blive ved med at vokse. Og så går en lille del til administration, og til at give Plastic Change et sted at bo.</p>    
+<p>En mindre del går til fundraising og indsamlinger, så Plastic Changer bevægelsen kan blive ved med at vokse. Og så går en lille del til administration, og til at give Plastic Change et sted at bo.</p>   
+<Button03 />
+<Button02 />
 </div>
     <div class="guideSektion">
-
+<h1>KAN DU IKKE STØTTE ØKONOMISK?</h1>
+<p>At støtte Plastic Change behøver ikke nødvendigvis indebære et økonomisk bidrag. </p>
+<div id="grid_1-1-1_symbol">
+    <Image src={symbol01} alt="symbol" />
+    <Image src={symbol02} alt="symbol" />
+    <Image src={symbol03} alt="symbol" />
+</div>
+<p>Du kan læse mere her:</p>
+<Button04 />
     </div>
 </div>
 
@@ -19,7 +35,44 @@
     grid-template-columns: 1fr 1fr;
     background-image: url("../assets/bg-img-klima.png");
     color: white;
+    padding-bottom: 2%;
 }
+
+#grid_1-1-1_symbol {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 8%;
+    margin-bottom: 10%;
+}
+
+.blivKlimaVen {
+        margin-left: 10%;
+        margin-top: 5%;
+        margin-right: 5%;
+    }
+
+    .blivKlimaVen h1,  .guideSektion h1 {
+        margin-bottom: 5%;
+    }
+
+
+    .blivKlimaVen p {
+        margin-right: 25%;
+        margin-bottom: 5%;
+        font-size: 20px;
+    }
+
+ .guideSektion {
+    margin-top: 5%;
+    margin-right: 10%;
+    margin-left: 5%;
+ }
+
+ .guideSektion p {
+        margin-right: 25%;
+        margin-bottom: 5%;
+        font-size: 20px;
+    }
 
 
 
