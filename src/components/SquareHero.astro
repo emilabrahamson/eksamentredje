@@ -1,0 +1,39 @@
+---
+import Button02 from "./Button02.astro";
+---
+<div id="grid_1-1-1">
+<div class="section1">
+<h2>SKRIV UNDER</h2>
+<p>Kræv en ambitiøs global plastiktraktat</p>
+<a href="#">Hvad er plastiktraktaten</a>
+</div>
+<div class="section2">
+    <h2>DELTAG I KAMPEN</h2>
+    <p>Hjælp os med at skabe en verden uden plastikforurening</p>
+    <Button02 />
+</div>
+<div class="section3">
+    <h2>FÅ SVAR</h2>
+    <p>Få svar på dine spørgsmål om plastik</p>
+    <a href="#">Hvad kan du gøre? </a>
+</div>
+</div>
+
+<style>
+    #grid_1-1-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: var(--bg-opacity);
+    }
+
+.section1, .section2, .section3 {
+    line-height: 40px;
+}
+
+
+
+    a {
+        color: white;
+    }
+
+</style>
