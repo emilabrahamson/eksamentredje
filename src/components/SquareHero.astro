@@ -1,5 +1,6 @@
 ---
 import Button02 from "./Button02.astro";
+import "../styles/global.css";
 ---
 <div id="grid_1-1-1">
 <div class="section1">
@@ -25,13 +26,14 @@ import Button02 from "./Button02.astro";
         grid-template-columns: 1fr 1fr 1fr;
         background-color: var(--bg-opacity);
         max-width: 70%;
-        margin-top: 50%;
+        margin-top: 30%;
     }
 
 .section1, .section2, .section3 {
     line-height: 40px;
-    border-right: 1px white solid;
+    border-right: 1px var(--light) solid;
     margin-left: 5%;
+    margin-bottom: 5%;
 }
 
 p {
