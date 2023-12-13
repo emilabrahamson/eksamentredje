@@ -2,6 +2,7 @@
 
 :root {
   --bg: #1c1e23;
+  --bg-opacity: #1c1e23cc;
   --red: #ff1054;
   --green: #007c79;
   --light: #cacdd5;
@@ -9,4 +10,9 @@
 
 * {
   margin: 0;
+}
+
+h2 {
+  color: white;
+  font-family: rubik;
 }
