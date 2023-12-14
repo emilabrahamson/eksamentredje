@@ -6,20 +6,20 @@
 <p>I vores nyhedsbrev kan du holde dig opdateret om bl.a 
     vores kamp imod plastikforurening. Vi holder dig også opdateret på vigtige verdensbegivender relateret til vores arbejde. </p>
     <input type="text" placeholder="Skriv dit navn" class="formular" />
-    <input type="text" placeholder="Skriv din mail" class="formular" /></div>
+    <input type="text" placeholder="Skriv din mail" class="formular" />
+<div class="right"><button>Tilmed dig</button></div>
 </div>
+</div>
+
 <style>
     #bg-flasker{
        background-image: url("../assets/bg-flasker.png"); 
+       background-size: cover;
+       background-repeat: no-repeat;
+       margin-left: -7px;
     } 
 
-    .center {
-  margin: auto;
-  width: 50%;
-  padding: 10px;
-}
-
-.center form{
+.center {
   margin: auto;
   width: 50%;
   padding: 10px;
@@ -44,6 +44,22 @@ input {
 h1,p {
     color: white;
     margin-top: 5%;
+}
+
+button {
+appearance:none;
+-webkit-appearance:none;
+padding:10px;
+border:none;
+background-color: var(--green);
+color:#fff;
+border-radius:5px;
+width:20%;
+}
+
+.right {
+    width: 95%;
+text-align: right;
 }
 
 </style>
