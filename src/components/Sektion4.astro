@@ -1,24 +1,101 @@
 ---
 import Button03 from "./Button03.astro";
 import { Image } from "astro:assets";
-import grid01 from "../assets/grid01.png";
-import grid02 from "../assets/grid02.png";
-import grid03 from "../assets/grid03.png";
-import grid04 from "../assets/grid04.png";
 ---
+<div class="deltag">
 <h1>DELTAG I KAMPEN MED OS</h1>
 <p>Besøg vores videnscenter og bliv indspireret af hvad du kan gøre af store og små ting som alle gør en kæmpe forskel for vores natur og havmiljø.</p>
-<div id="grid_1-1-1-1">
-    <Image src={grid01} alt="billede i grid" />
-    <Image src={grid02} alt="billede i grid" />
-    <Image src={grid03} alt="billede i grid" />
-    <Image src={grid04} alt="billede i grid" />
 </div>
+<div id="grid_1-1-1-1">
+    <div id="s01"><div class="box"><p>Hvad kan du gøre?</p><a href="#">Gode Råd</a></div></div>
+    <div id="s02"><div class="box"><p>Deltag i kampen</p><a href="#">Bliv Plastic Changer</a></div></div>
+    <div id="s03"><div class="box"><p>Gør en forskel</p><a href="#">Bliv Erhvervspartner</a></div></div>
+    <div id="s04"><div class="box"><p>Kom med udenfor</p><a href="#">Ryd op i Naturen</a></div></div>
+</div>
+<div class="button">
 <Button03 />
-
+</div>
 <style>
 #grid_1-1-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+margin-left: 1.2%;
 }
+
+.button {
+    margin-top: 3%;
+    text-align: center;
+}
+
+.deltag {
+        margin-left: 5%;
+        margin-top: 5%;
+        margin-right: 50%;
+        margin-bottom: 3%;
+    }
+
+    .deltag h1 {
+        margin-bottom: 3%;
+        font-size: 50px;
+    }
+
+    #s01 {
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.73)),
+    url("../assets/grid01.png");
+    width: 95%;
+    height: 500px;
+    background-size: cover;
+    color: white;
+}
+
+#s02 {
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.73)),
+    url("../assets/grid02.png");
+    width: 95%;
+    height: 500px;
+    background-size: cover;
+    color: white;
+}
+
+#s03 {
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.73)),
+    url("../assets/grid03.png");
+    width: 95%;
+    height: 500px;
+    background-size: cover;
+    color: white;
+}
+
+#s04 {
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.73)),
+    url("../assets/grid04.png");
+    width: 95%;
+    height: 500px;
+    background-size: cover;
+    color: white;
+    
+}
+
+.box{
+    margin-top: 400px;
+    margin-left: 5%;
+}
+
+.box p {
+    font-size: 14px;
+    font-family: rubik;
+    margin-bottom: 5px;
+}
+
+.box a{
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+    font-family: rubik;
+}
+
 </style>
