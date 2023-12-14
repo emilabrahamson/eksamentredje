@@ -1,0 +1,31 @@
+---
+import { Image } from "astro:assets";
+import some01 from "../assets/some01.png";
+import some02 from "../assets/some02.png";
+---
+<div id="grid_1-1-1">
+    <div class="sectionImg">
+    <Image src={some01} alt="some" />
+</div>
+<div class="sectionText">
+<h1>FØLGE MED PÅ VORES SOCIALE MEDIER</h1>
+<p>Vær en del af den grønne bevægelse og følg med på vores sociale medier! </p>
+    <p>Vær med til at dele det gode budskab om en grønnere og bedre fremtid med mindre engangsplastik.</p>
+</div>
+<div class="sectionImg">
+        <Image src={some02} alt="some" />
+</div>
+</div>
+
+<style>
+#grid_1-1-1 {
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--bg);
+    color: white;
+    justify-items: center;
+    padding-bottom: 5%;
+}
+
+</style>
