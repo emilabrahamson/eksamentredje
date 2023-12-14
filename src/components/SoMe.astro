@@ -2,6 +2,10 @@
 import { Image } from "astro:assets";
 import some01 from "../assets/some01.png";
 import some02 from "../assets/some02.png";
+import insta from "../assets/insta.png"
+import face from "../assets/fb.png"
+import tiktok from "../assets/TikTok.png"
+import youtube from "../assets/YouTube.png"
 ---
 <div id="grid_1-1-1">
     <div class="sectionImg">
@@ -11,15 +15,33 @@ import some02 from "../assets/some02.png";
 <h1>FØLGE MED PÅ VORES SOCIALE MEDIER</h1>
 <p>Vær en del af den grønne bevægelse og følg med på vores sociale medier! </p>
     <p>Vær med til at dele det gode budskab om en grønnere og bedre fremtid med mindre engangsplastik.</p>
+    <div id="grid_1-1-1-1">
+<div id="someSymbol">
+    <a href="https://www.instagram.com/plasticchange/"><Image src={insta} alt="insta" /></a>
+  
+</div>
+<div id="someSymbol">
+    <a href="https://www.facebook.com/plasticchange/"><Image src={face} alt="fb" /></a>
+</div>
+<div id="someSymbol">
+    <a href="#"><Image src={tiktok} alt="tiktok" /></a>
+</div>
+<div id="someSymbol">
+    <a href="https://www.youtube.com/@plasticchange5159"> <Image src={youtube} alt="youtube" /></a>
+</div>
+
+    </div>
 </div>
 <div class="sectionImg">
         <Image src={some02} alt="some" />
 </div>
 </div>
 
+
+
 <style>
 #grid_1-1-1 {
-    padding-top: 5%;
+    padding-top: 3%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: var(--bg);
@@ -27,5 +49,27 @@ import some02 from "../assets/some02.png";
     justify-items: center;
     padding-bottom: 5%;
 }
+
+#grid_1-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 20%;
+    justify-items: center;
+}
+
+.sectionImg {
+    margin-top: 5%;
+}
+
+#someSymbol img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+p {
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
 
 </style>
