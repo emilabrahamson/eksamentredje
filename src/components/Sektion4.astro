@@ -3,7 +3,7 @@ import Button03 from "./Button03.astro";
 ---
 <div class="deltag">
 <h1>DELTAG I KAMPEN MED OS</h1>
-<p>Besøg vores videnscenter og bliv indspireret af hvad du kan gøre af store og små ting som alle gør en kæmpe forskel for vores natur og havmiljø.</p>
+<p>Besøg vores videnscenter og bliv inspireret af hvad du kan gøre af store og små ting som alle gør en kæmpe forskel for vores natur og havmiljø.</p>
 </div>
 <div id="grid_1-1-1-1">
     <div id="s01"><div class="box"><p>Hvad kan du gøre?</p><a href="#">Gode Råd</a></div></div>
@@ -96,6 +96,51 @@ margin-left: 1.2%;
     color: white;
     text-decoration: none;
     font-family: rubik;
+}
+
+@media only screen and (max-width: 600px) {
+    #grid_1-1-1-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+justify-items: center;
+gap: 10px;
+margin-left: 0%;
+margin-right: 0%;
+    }
+
+    .box {
+        margin-top: 70%;
+    }
+
+
+    .box a{
+       font-size: 18px;
+    }
+
+    #s01, #s02, #s03, #s04  {
+        width: 200px;
+height: 200px;
+border-radius: 5%;
+    }
+
+    #s03, #s04 {
+        margin-top: 5%;
+    }
+
+    .deltag {
+        margin-left: 5%;
+        margin-top: 5%;
+        margin-right: 20%;
+        margin-bottom: 3%;
+        font-size: 16px;
+    }
+
+    .deltag h1 {
+        font-size: 24px;
+    }
+
 }
 
 </style>
