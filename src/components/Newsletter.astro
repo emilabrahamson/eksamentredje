@@ -15,8 +15,7 @@
   <div class="text">
 <h1>Tilmeld dig vores Nyhedsbrev</h1>
 <p>I vores nyhedsbrev kan du holde dig opdateret om bl.a 
-  vores kamp imod plastikforurening.</p>
-  <p> Vi holder dig også opdateret på vigtige verdensbegivender relateret til vores arbejde. </p>
+  vores kamp imod plastikforurening. Vi holder dig også opdateret på vigtige verdensbegivender relateret til vores arbejde. </p>
   </div>
   <div id="formMobile">
   <input type="text" placeholder="Skriv dit navn" class="formular" />
@@ -85,16 +84,19 @@ text-align: right;
 
 @media only screen and (max-width: 600px) {
   #bg-flasker{
+
        display: none;
     } 
 
     #bg-mobile {
-  background-color: var(--bg);
+background-image: url("../assets/bg-mobile.png"); 
+background-repeat:no-repeat;
   display: block;
+  margin-left: -2px;
 }
 
 button {
-  width: 100%;
+  width: 30%;
   margin-left: 0%;
   margin-right: 0%;
 }
@@ -107,16 +109,16 @@ padding-top: 5%;
 
 .text h1 {
   width: 70%;
+  font-size: 18px;
+}
+
+h1 {
+  margin-top: 2%;
 }
 
 .text p {
   width: 90%;
-
-}
-
-p {
-    margin-top: 10%;
-    margin-bottom: 10%;
+  font-size: 14;
 }
 
 input {

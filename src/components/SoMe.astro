@@ -8,6 +8,9 @@ import tiktok from "../assets/TikTok.png"
 import youtube from "../assets/YouTube.png"
 ---
 <div id="grid_1-1-1">
+    <div id="mobileImg">
+        <Image src={some01} alt="some" />
+    </div>
     <div class="sectionImg">
     <Image src={some01} alt="some" />
 </div>
@@ -40,6 +43,10 @@ import youtube from "../assets/YouTube.png"
 
 
 <style>
+#mobileImg {
+    display: none;
+}
+
 #grid_1-1-1 {
     padding-top: 3%;
     display: grid;
@@ -71,5 +78,46 @@ p {
     margin-bottom: 4%;
 }
 
+@media only screen and (max-width: 600px) {
+    #grid_1-1-1 {
+        display: block;
+        margin-top: 0%;
+    }
+
+    #grid_1-1-1-1 {
+    display: none;
+    margin-top: 0%;
+}
+
+.sectionImg, #someSymbol {
+    display: none;
+}
+
+#mobileImg {
+    display: block; 
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+#mobileImg img {
+   width: 93px;
+   height: 93px; 
+  
+}
+
+.sectionText {
+    margin-left: 5%;
+}
+
+.sectionText h1{
+   font-size: 18px;
+}
+
+.sectionText p{
+   font-size: 14px;
+}
+
+}
 
 </style>
