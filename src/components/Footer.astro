@@ -30,9 +30,15 @@ import youtube from "../assets/YouTubeS.png"
         </div>
         <div id="someSymbol">
             <a href="https://www.youtube.com/@plasticchange5159"> <Image src={youtube} alt="youtube" /></a>
-        </div>
-        
+        </div></div>
+        <div class="mobile">
+            <Image src={logo} alt="logo" />
+            <p>Mail: info@plasticchange.org</p>
+            <p>Tlf: +45 42 66 72 46</p>
+            <p>Telefon åben Mandag - Fredag 10:00-15:00</p>
             </div>
+        
+            
        <div class="button">
 <Button02 />
 <Button06 />
@@ -49,7 +55,7 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-    padding-top: 10%;
+    padding-top: 5%;
     padding-bottom: 10%;
  } 
 
@@ -76,6 +82,31 @@ text-align: center;
 .sectionLeft p{
 margin-top: 7%;
 font-size: 20px;
+}
+
+.mobile {
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+footer {
+    display: block;
+}
+
+.sectionLeft {
+    display: none;
+}
+
+.mobile {
+    display: block;
+    margin-left: 5%;
+}
+
+.mobile p{
+  line-height: 50px;
+}
+
 }
 
  </style>
