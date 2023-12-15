@@ -5,9 +5,15 @@ import Button05 from "./Button05.astro";
 <div id="bg-video"><div id="video">
 <h1>Vores fremhævet video</h1>
 <h2>"En Verden Af Plastik"</h2>
+<div id="web">
 <iframe width="770" height="450" src="https://www.youtube.com/embed/7eivTQkBYvo?si=3aaxUKzQSnZPNh3y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<div id="mobile">
+    <iframe width="385" height="225" src="https://www.youtube.com/embed/7eivTQkBYvo?si=3aaxUKzQSnZPNh3y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div id="textWeb">
 <p>Som seer kan du forvente at få indblik i omfanget af problemet og måske blive opfordret til handling for at reducere plastforbruget og støtte bæredygtige løsninger.</p>
-<div class="button">
+</div><div class="button">
     <Button03 />
 <Button05 />
 </div>
@@ -42,5 +48,29 @@ p{
     .button {
     margin-top: 3%;
     text-align: center;
+}
+
+#mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    #web {
+        display: none;
+    }
+    #mobile {
+    display: inline;
+}
+    #video {
+width: auto;
+text-align: center;
+    }
+
+    h1, h2 {
+        text-align: center;
+    }
+#textWeb {
+    display: none;
+}
 }
 </style>
