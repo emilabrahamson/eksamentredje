@@ -19,6 +19,9 @@ import "../styles/global.css";
     <a href="#">Hvad kan du gøre? </a>
 </div>
 </div>
+<div id="mobile">
+    <h1>Plastikforurening truer livet i havet og på jorden</h1>
+</div>
 
 <style>
     #grid_1-1-1 {
@@ -45,5 +48,31 @@ p {
         color: white;
         font-family: rubik;
     }
+
+    #mobile {
+        display: none;
+    }
+
+    @media only screen and (max-width: 600px) {
+#grid_1-1-1 {
+    display: none;
+}
+
+#mobile {
+    display: block;
+    color: white;
+    background-color: var(--bg-opacity);
+    margin-top: 30%;
+    margin-left: 3%;
+    margin-right: 10%;
+}
+
+#mobile h1 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+}
+
 
 </style>
