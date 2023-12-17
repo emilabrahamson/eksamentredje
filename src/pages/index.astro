@@ -7,18 +7,11 @@ import Newsletter from "../components/Newsletter.astro";
 import VideoSektion from "../components/VideoSektion.astro";
 import SoMe from "../components/SoMe.astro";
 import Footer from "../components/Footer.astro";
+import BaseLayout from "../layout/BaseLayout.astro";
 import "../styles/global.css";
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Plastic Change</title>
-	</head>
 	<body>
+		<BaseLayout />
 		<HeroSection />
 		<InfoSektion />
 		<BlivKlimaVen />
@@ -29,4 +22,4 @@ import "../styles/global.css";
 <Footer />
 
 	</body>
-</html>
+
